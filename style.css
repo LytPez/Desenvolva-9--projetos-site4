@@ -1,50 +1,97 @@
+/*
+definindo espçamento externo e interno, 
+adicionando cor de fundo com degrade 
+definindo altura 100vh seria 100% do site*/
 body{
   margin: 0px;
   padding: 0px;
   background-image: linear-gradient(#babcd3,#1d0b1e);
   height: 100vh;
 }
+
+/*
+definindo cor de fundo do cabeçalho
+, altura alinha ao centro 
+*/
 header{
   display: flex;
   background-color: #5e503e;
   height: 60px;
   align-items: center;
 }
+
+/*
+definindo cor e espaçamento externo a esquerda
+*/
 header h2{
   color: #f1f1f1;
   margin-left: 20px;
 }
+
+/*
+alinhando ao centro horizontal e vertical, 
+fazendo calculo para determinar a altura do main,
+para o main pegar 100% do que restou do site subtrai 
+pela altura do cabecalho
+*/
 main{
   display: flex;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 60px);
 }
-.container-login{
 
+/*
+definindo altura e largura,
+cor de fundo, bordas arredondas, destacando minha caixa 
+com box shadow que vai sombrear os eixos x e y de acordo
+ com os pixel q definir na cor esoclhida
+*/
+.container-login{
   width: 500px;
   height: 500px;
-  background-color: ##b4aeb5;
+  background-color: #b4aeb5;
   border-radius: 10px;
   box-shadow: 3px 3px 10px 10px #e19aff;
 }
+
+/*
+definindo cor e alinhando ao centro 
+*/
 .container-login h1{
   display: flex;
   justify-content: center;
   color: #000000;
 }
+
+/*
+alinhando ao centro e definindo o 
+conteudo em colunas
+*/
 form{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
+/*
+definindo altura, largura, bordas arredondadas
+e espaçamento interno
+*/
 input{
   height: 40px;
   width: 250px;
   border-radius: 4px;
   padding: 5px;
 }
+
+/*
+definindo largura, cor de fundo,
+espaçamento interno, cor, definindo texto em negrito
+adicionando bordas arredondas, e definindo 
+espaçamento externo ao topo
+*/
 button{
   width: 100px;
   background-color: #000000;
@@ -54,24 +101,42 @@ button{
   border-radius: 4px;
   margin-top: 10px;
 }
+
+/*
+alinhando ao centro 
+*/
 .forgot{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
+/*
+definindo cor, espaçamento externo a direita
+*/
 .forgot p{
   color: #ddd;
   margin-right: 10px;
 }
+
+/*definindo cor*/
 .forgot a{
   color: darkorange;
 }
+
+/*
+alinhando ao centro
+*/
 .downloads{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/*
+definindo altura e espaçamento externo
+*/
 .downloads img{
   height: 35px;
   margin: 10px;
